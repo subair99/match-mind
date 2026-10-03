@@ -1,0 +1,13 @@
+    [project]
+    name = "matchmind-infra"
+    version = "0.1.0"
+    description = "AWS CDK app"
+    requires-python = ">=3.12"
+    dependencies = [
+        "aws-cdk-lib",
+"constructs",
+    ]
+
+    [build-system]
+    requires = ["hatchling"]
+    build-backend = "hatchling.build"

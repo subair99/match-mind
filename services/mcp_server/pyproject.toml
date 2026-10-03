@@ -1,0 +1,20 @@
+    [project]
+    name = "matchmind-server"
+    version = "0.1.0"
+    description = "MatchMind MCP server and Strands agent (AgentCore Runtime)"
+    requires-python = ">=3.12"
+    dependencies = [
+        "mcp>=2,<3",
+        "strands-agents",
+        "strands-agents-tools",
+        "bedrock-agentcore",
+        "boto3",
+        "event-timeline-kit",
+]
+
+    [build-system]
+    requires = ["hatchling"]
+    build-backend = "hatchling.build"
+
+[tool.uv.sources]
+event-timeline-kit = { workspace = true }

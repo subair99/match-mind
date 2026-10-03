@@ -1,0 +1,19 @@
+    [project]
+    name = "matchmind-tagger"
+    version = "0.1.0"
+    description = "Web tagger for confirming events"
+    requires-python = ">=3.12"
+    dependencies = [
+        "fastapi",
+"uvicorn",
+"jinja2",
+"boto3",
+"event-timeline-kit",
+    ]
+
+    [build-system]
+    requires = ["hatchling"]
+    build-backend = "hatchling.build"
+
+[tool.uv.sources]
+event-timeline-kit = { workspace = true }

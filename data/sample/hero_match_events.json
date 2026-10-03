@@ -1,0 +1,31 @@
+{
+  "match_id": "hero-match",
+  "title": "Saturday amateur league",
+  "video_uri": "s3://REPLACE-ME/hero-match.mp4",
+  "events": [
+    {
+      "event_id": "e1",
+      "t_start": 2040.0,
+      "t_end": 2052.0,
+      "type": "goal",
+      "player": 7,
+      "importance": 0.95,
+      "what": "Goal, 34'",
+      "why": "Opens the scoring after a run down the left.",
+      "next": ["watch_build_up", "follow_player"],
+      "confidence": "high"
+    },
+    {
+      "event_id": "e2",
+      "t_start": 2710.0,
+      "t_end": 2718.0,
+      "type": "shot",
+      "player": 7,
+      "importance": 0.6,
+      "what": "Shot saved, 45'",
+      "why": "Second chance for number 7 in ten minutes.",
+      "next": ["follow_player"],
+      "confidence": "medium"
+    }
+  ]
+}

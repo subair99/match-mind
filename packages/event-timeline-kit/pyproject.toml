@@ -1,0 +1,12 @@
+[project]
+name = "event-timeline-kit"
+version = "0.1.0"
+description = "Schema, SDK and agent tools for timestamped video events"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

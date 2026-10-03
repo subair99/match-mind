@@ -1,0 +1,17 @@
+    [project]
+    name = "matchmind-ingest"
+    version = "0.1.0"
+    description = "Ingest pipeline tasks for Step Functions"
+    requires-python = ">=3.12"
+    dependencies = [
+        "boto3",
+"numpy",
+"event-timeline-kit",
+    ]
+
+    [build-system]
+    requires = ["hatchling"]
+    build-backend = "hatchling.build"
+
+[tool.uv.sources]
+event-timeline-kit = { workspace = true }

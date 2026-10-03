@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EventTimeline",
+  "type": "object",
+  "required": ["match_id", "events"],
+  "properties": {
+    "match_id": {"type": "string"},
+    "video_uri": {"type": "string"},
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["event_id", "t_start", "t_end", "type", "importance"],
+        "properties": {
+          "event_id": {"type": "string"},
+          "t_start": {"type": "number", "minimum": 0},
+          "t_end": {"type": "number", "minimum": 0},
+          "type": {"type": "string"},
+          "player": {"type": ["integer", "null"]},
+          "importance": {"type": "number", "minimum": 0, "maximum": 1},
+          "what": {"type": "string"},
+          "why": {"type": "string"},
+          "next": {"type": "array", "items": {"type": "string"}},
+          "confidence": {"enum": ["low", "medium", "high"]}
+        }
+      }
+    }
+  }
+}
